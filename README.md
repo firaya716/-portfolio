@@ -7,7 +7,7 @@
 <title>Мои проекты</title>
 </head>
 <body>
-<h1>1.авукер</h1>
+<h1>1.Secret-Santa </h1>
 <p>Это мой первый HTML-документ.</p>
 </body>
 </html>
