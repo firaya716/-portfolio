@@ -4,10 +4,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Моя первая страница</title>
+<title>Мои проекты</title>
 </head>
 <body>
-<h1>Привет, мир!</h1>
+<h1>1.авукер</h1>
 <p>Это мой первый HTML-документ.</p>
 </body>
 </html>
