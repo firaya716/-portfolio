@@ -1,11 +1,12 @@
-<span class="tech-tag">Python</span>
+<span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">Python</span>
                         <span class="tech-tag">Flask</span>
                         <span class="tech-tag">SQLite</span>
                     </div>
                     <p class="project-description">
                         Веб-приложение для мастера маникюра с системой записи клиентов. 
-                        Использует SQLite для хранения данных и имеет галерею работ 
-                        (изображения хранятся в static/uploads). Упрощает ведение записей и портфолио.
+                        Использует SQLite для хранения данных и имеет галерею работ. 
+                        Упрощает ведение записей и демонстрацию портфолио мастеру.
                     </p>
                     <div class="project-link">
                         <span>Перейти к репозиторию</span>
@@ -15,7 +16,7 @@
             </a>
 
             <!-- Сайт генератор паролей -->
-            <a href="https://github.com/Fa1bu/web-password-generator" target="_blank" class="project-card">
+            <a href="https://github.com/firaya716/web-password-generator" target="_blank" class="project-card">
                 <div class="project-icon">
                     <i class="fas fa-lock"></i>
                 </div>
@@ -30,7 +31,7 @@
                     <p class="project-description">
                         Онлайн-генератор паролей с интуитивным интерфейсом. 
                         Позволяет быстро создавать безопасные пароли прямо в браузере 
-                        с возможностью копирования в один клик.
+                        с возможностью копирования в один клик и настройкой параметров.
                     </p>
                     <div class="project-link">
                         <span>Перейти к репозиторию</span>
@@ -45,7 +46,7 @@
         <div class="github-info">
             <h3><i class="fab fa-github"></i> Мой GitHub</h3>
             <p>Все мои проекты доступны на GitHub. Вы можете посмотреть исходный код, историю изменений и поставить звезду ⭐</p>
-            <a href="https://github.com/Fa1bu" target="_blank" class="github-button">
+            <a href="https://github.com/firaya716" target="_blank" class="github-button">
                 <i class="fab fa-github"></i> Посмотреть все репозитории
             </a>
         </div>
@@ -54,10 +55,9 @@
     <!-- Футер -->
     <footer class="footer">
         <div class="container">
-            <p>© 2024 Портфолио разработчика. Все проекты с открытым исходным кодом.</p>
+            <p>© <span id="current-year">2024</span> Портфолио разработчика. Все проекты с открытым исходным кодом.</p>
             <p class="footer-links">
-                <a href="https://github.com/Fa1bu" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                <!-- Можно добавить другие ссылки -->
+                <a href="https://github.com/firaya716" target="_blank"><i class="fab fa-github"></i> GitHub</a>
             </p>
         </div>
     </footer>
@@ -66,10 +66,7 @@
         // Добавляем год в футер
         document.addEventListener('DOMContentLoaded', function() {
             const year = new Date().getFullYear();
-            const copyright = document.querySelector('.footer p');
-            if (copyright) {
-                copyright.innerHTML = copyright.innerHTML.replace('2024', year);
-            }
+            document.getElementById('current-year').textContent = year;
             
             // Добавляем анимацию при наведении на карточки
             const cards = document.querySelectorAll('.project-card');
